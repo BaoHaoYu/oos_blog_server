@@ -8,6 +8,7 @@ import onerror from 'koa-onerror'
 import koaStatic from 'koa-static'
 // import path from 'path'
 import index from './routes/index'
+import config from './config'
 
 const app = new Koa()
 
@@ -33,7 +34,7 @@ app.use(async (ctx, next) => {
   console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
 })
 
-app.use(koaStatic('/opt/www/hexo-blog/public'))
+app.use(koaStatic(config.blogPublic))
 
 // routes
 app.use(index.routes()).use(index.allowedMethods())
