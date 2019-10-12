@@ -1,0 +1,61 @@
+{
+  "scripts": {
+    "server": "ts-node src/bin/www.ts"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "@types/ali-oss": "^6.0.4",
+    "@types/async-busboy": "^0.7.0",
+    "@types/debug": "^4.1.5",
+    "@types/get-stream": "^3.0.2",
+    "@types/imagemin": "^7.0.0",
+    "@types/imagemin-gifsicle": "^5.2.0",
+    "@types/imagemin-jpegtran": "^5.0.0",
+    "@types/koa": "^2.0.50",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-json": "^2.0.18",
+    "@types/koa-logger": "^3.1.1",
+    "@types/koa-router": "^7.0.42",
+    "@types/koa-static": "^4.0.1",
+    "@types/koa-views": "^2.0.3",
+    "@types/koa__cors": "^2.2.3",
+    "@types/lodash": "^4.14.141",
+    "ali-oss": "^6.1.1",
+    "async-busboy": "^0.7.0",
+    "debug": "^4.1.1",
+    "get-stream": "^5.1.0",
+    "imagemin": "^7.0.0",
+    "imagemin-gifsicle": "^6.0.1",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "koa": "^2.8.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.1",
+    "lodash": "^4.17.15",
+    "typescript": "^3.6.3"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-plugin-prettier": "^2.0.1"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "printWidth": 80,
+    "semi": false,
+    "arrowParens": "always",
+    "useTabs": false,
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "tabWidth": 2,
+    "singleQuote": true
+  }
+}

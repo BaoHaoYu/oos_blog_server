@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "hexo_blog",
+      "script": "./node_modules/.bin/ts-node",
+      "args": "src/bin/www.ts"
+    }
+  ]
+}
