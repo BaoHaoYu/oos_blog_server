@@ -25,14 +25,6 @@ app.use(json())
 app.use(logger())
 app.use(cors())
 
-// logger
-app.use(async (ctx, next) => {
-  const start: any = new Date()
-  await next()
-  const end: any = new Date()
-  const ms: any = end - start
-  console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
-})
 
 app.use(koaStatic(config.blogPublic))
 
