@@ -25,8 +25,8 @@ app.use(json())
 app.use(logger())
 app.use(cors())
 
-
-app.use(koaStatic(config.blogPublic))
+// 缓存一个月
+app.use(koaStatic(config.blogPublic, { maxage: 2592000 }))
 
 // routes
 app.use(index.routes()).use(index.allowedMethods())
